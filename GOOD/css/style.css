@@ -1,0 +1,198 @@
+/* ============================================
+   G.O.O.D LUXURY DELIVERY - ESTILOS COMPLETOS
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --gold-dark: #8B6914;
+    --gold-medium: #A67C1E;
+    --gold-light: #C59B3C;
+    --gold-gradient: linear-gradient(135deg, #8B6914 0%, #A67C1E 50%, #8B6914 100%);
+    --bg-light: #F8F9FA;
+    --text-dark: #1A1A1A;
+    --text-muted: #6C757D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-light);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-dark);
+}
+
+/* ===== NAVBAR ===== */
+.navbar-custom {
+    background: white;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+    padding: 1rem 0;
+}
+
+.logo-small {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+}
+
+/* ===== TARJETAS ===== */
+.glass-card {
+    background: white;
+    border: 1px solid rgba(139,105,20,0.15);
+    border-radius: 20px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    height: 100%;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold-medium);
+    box-shadow: 0 15px 35px rgba(139,105,20,0.1);
+}
+
+/* ===== BOTONES ===== */
+.btn-gold {
+    background: var(--gold-gradient);
+    border: none;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0.6rem 1.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139,105,20,0.3);
+    color: white;
+}
+
+.btn-outline-gold {
+    background: transparent;
+    border: 1.5px solid var(--gold-medium);
+    color: var(--gold-medium);
+    font-weight: 600;
+    padding: 0.6rem 1.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-gold:hover {
+    background: var(--gold-medium);
+    color: white;
+}
+
+/* ===== TABLAS ===== */
+.table-custom {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.table-custom thead th {
+    background: linear-gradient(135deg, #8B6914 0%, #A67C1E 100%);
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 1rem;
+}
+
+.table-custom tbody tr:hover {
+    background: rgba(139,105,20,0.05);
+}
+
+/* ===== BADGES ===== */
+.badge-gold {
+    background: linear-gradient(135deg, #8B6914 0%, #A67C1E 100%);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+}
+
+.badge-success {
+    background: #28a745;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+}
+
+.badge-warning {
+    background: #ffc107;
+    color: #1a1a1a;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+}
+
+.badge-danger {
+    background: #dc3545;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+}
+
+/* ===== TARJETAS DE ESTADÍSTICAS ===== */
+.stat-card {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    text-align: center;
+    border-left: 4px solid var(--gold-medium);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--gold-dark);
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+}
+
+/* ===== MODAL ===== */
+.modal-content-custom {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.modal-header-custom {
+    background: var(--gold-gradient);
+    color: white;
+    border-radius: 20px 20px 0 0;
+    padding: 1rem 1.5rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .stat-number {
+        font-size: 1.8rem;
+    }
+    
+    .glass-card {
+        margin-bottom: 1rem;
+    }
+    
+    .table-custom {
+        font-size: 0.8rem;
+    }
+}
