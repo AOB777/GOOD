@@ -1,0 +1,31 @@
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Entorno de desarrollo
+.idea/
+.vscode/
+*.sublime-*
+
+# Archivos de log
+*.log
+error_log
+
+# Base de datos local (si hay archivos sueltos)
+*.sqlite
+*.db
+
+# Configuraciones locales
+.env
+config.local.php
+
+# Archivos subidos (mantener la carpeta pero no los archivos)
+/uploads/*.jpg
+/uploads/*.png
+/uploads/*.jpeg
+/uploads/*.webp
+!uploads/.gitkeep
+
+# Archivos temporales
+*.tmp
+*.cache
