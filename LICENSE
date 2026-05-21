@@ -1,0 +1,20 @@
+
+### 3. Comandos para subir a GitHub:
+
+```bash
+# 1. Inicializar repositorio
+cd good-luxury-delivery
+git init
+
+# 2. Agregar todos los archivos
+git add .
+
+# 3. Crear primer commit
+git commit -m "Initial commit: G.O.O.D Luxury Delivery Service v1.0"
+
+# 4. Conectar a repositorio remoto (crear antes en GitHub)
+git remote add origin https://github.com/tu-usuario/good-luxury-delivery.git
+
+# 5. Subir a GitHub
+git branch -M main
+git push -u origin main
